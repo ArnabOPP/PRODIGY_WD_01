@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PRODIGY_WD_01</title>
+
+  <!-- AOS Animation Library -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+  
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Hamburger Icon & Brand -->
+  <div class="menu-icon" onclick="togglePanel()">☰</div>
+  <div class="brand-name"><a href="#home" style="color: white; text-decoration: none;">Arnab Chatterjee</a></div>
+
+  <!-- Side Panel -->
+  <div id="sidePanel" class="side-panel">
+    <a href="#home" onclick="togglePanel()">Home</a>
+    <a href="#task-details" onclick="togglePanel()">Task Details</a>
+    <a href="#about" onclick="togglePanel()">About</a>
+    <a href="#features" onclick="togglePanel()">Key Features</a>
+  </div>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <ul class="nav-menu">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#task-details">Task Details</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#features">Key Features</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-overlay"></div>
+  </section>
+
+  <!-- Sections -->
+  <section class="info-section" id="task-details" data-aos="fade-up">
+    <h2>Task Details</h2>
+    <p>
+        Create an interactive navigation menu that changes color or style when scrolled or when hovering over a menu item. The navigation menu should have a fixed position and be visible on all pages. Use HTML to structure the menu, CSS to style it, and JavaScript to add interactivity, such as changing the background color or font color of the menu when it is scrolled or when a menu item is hovered over.
+    </p>
+  </section>
+
+  <section class="info-section" id="about" data-aos="fade-up">
+    <h2>About This Website</h2>
+    <p>
+This website is a fully responsive, modern, and performance-optimized platform designed to showcase both my technical skills and design aesthetics. The site serves as a dynamic digital portfolio that combines interactivity, clean UI/UX principles, and a futuristic tech theme. From the moment users land on the homepage, they are immersed in a dark, elegant interface complemented by a custom-designed background image that reflects a sophisticated sense of modern web aesthetics.
+
+One of the most defining features of this website is its interactive navigation system. The top navigation bar is fixed, making it easy for users to explore different sections of the site without losing their place. On mobile and smaller screens, unnecessary nav links are automatically hidden to reduce clutter, with a clean hamburger menu that toggles a sleek side panel—ensuring accessibility and functionality across all devices.
+
+The design emphasizes minimalism and contrast, using dark backgrounds, vibrant hover effects, and center-aligned text to ensure readability and user focus. This design also provides an ideal layout for task-based content, portfolio sections, or blog entries without overwhelming the user.
+    </p>
+  </section>
+
+  <section class="info-section" id="features" data-aos="fade-up">
+    <h2>Key Features</h2>
+    <p>
+✅ <font color="blueviolet"><b>1. Fixed Navigation Bar with Scroll Detection</b></font><br>
+ • The top navbar intelligently changes its background on scroll, enhancing both style and readability.<br>
+
+ • Remains accessible at all times, ensuring better user navigation and flow.<br>
+
+✅ <font color="blueviolet"><b>2. Responsive Side Panel Menu</b></font><br>
+ • A mobile-first collapsible side panel that slides in with a smooth transition.<br>
+
+ • Menu items are centered and spaced with modern divider lines that have smart padding on the sides for clean aesthetics.<br>
+
+ • Controlled by a single hamburger icon that toggles open/close state—no extra buttons needed.<br>
+
+✅ <font color="blueviolet"><b>3. Dynamic Fullscreen Background Image</b></font><br>
+ • Custom-designed tech-themed image that fits the futuristic tone of the site.<br>
+
+ • Uses background-size: cover and background-position: center for perfect scaling across all devices.<br>
+
+✅ <font color="blueviolet"><b>4. Mobile Responsiveness</b></font><br>
+ • Optimized for all screen sizes with media queries.<br>
+
+ • Removes unnecessary elements on smaller devices for a cleaner look and better performance.<br>
+
+ • Navigation and layout adapt gracefully for touch interaction.<br>
+
+✅ <font color="blueviolet"><b>5. Overlay and Section Transitions</b></font><br>
+ • A semi-transparent overlay ensures text over background is always readable.<br>
+
+ • Smooth scroll and animated transitions between sections enhance the UX.<br>
+
+✅ <font color="blueviolet"><b>6. Custom Info Section</b></font><br>
+ • Well-structured section for writing detailed descriptions of your tasks, projects, or blogs.<br>
+
+ • Styled with readable fonts, centered content, and soft padding for long-form content.<br>
+
+✅ <font color="blueviolet"><b>7. Performance and Scalability</b></font><br>
+ • Lightweight HTML/CSS structure makes it easy to host, clone, and expand.<br>
+
+ • Clean and modular code allows you to quickly add more pages, sections, or JavaScript functionality.<br>
+
+✅ <font color="blueviolet"><b>8. Design Theme</b></font><br>
+ • Futuristic dark theme using green/white neon accents.<br>
+
+ • Ideal for tech portfolios, internship tasks, coding challenges, or SaaS landing pages.
+    </p>
+  </section>
+
+  <!-- Marquee -->
+  <marquee behavior="scroll" style="background-color: rgb(36, 9, 62);">
+    <h2 style="color: white; text-align: center;">
+      Special Thanks To Prodigy InfoTech For Giving Me This Internship Opportunity. This Project Is Made According To The Guidelines Provided By Prodigy InfoTech For The Task 01.
+    </h2>
+  </marquee>
+
+  <!-- Scroll to Top Button -->
+  <button onclick="scrollToTop()" id="scrollTopBtn" title="Go to top">↑</button>
+
+  <!-- Sticky Footer -->
+  <footer>
+    &copy; 2025 Arnab Chatterjee | Made with ❤️ for Prodigy InfoTech
+  </footer>
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
